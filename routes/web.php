@@ -16,3 +16,6 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->post('/create', 'VideoController@create');
+$router->get('/status', 'VideoController@getStatus');
